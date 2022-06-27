@@ -1,0 +1,9 @@
+Device configured: cuda:0
+True
+Starting training loop...
+Traceback (most recent call last):
+  File "run.py", line 84, in <module>
+    train(ncf, datasets, hyperparameters)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\training.py", line 70, in train
+    pbar = tqdm(DatasetBatchIterator(datasets[phase][0], datasets[phase][1], batch_size=batch_size, shuffle=False))
+TypeError: 'module' object is not callable

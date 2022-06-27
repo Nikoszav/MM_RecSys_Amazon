@@ -1,0 +1,9 @@
+Device configured: cuda:0
+True
+Starting training loop...
+Epoch [001/060][Time:2919.88 sec] Train Loss: 1.3815 / Validation Loss: 1.0810
+Epoch [002/060][Time:2976.10 sec] Train Loss: 1.2088 / Validation Loss: 1.0811
+Epoch [003/060][Time:2974.90 sec] Train Loss: 1.1981 / Validation Loss: 1.0811
+Epoch [004/060][Time:2985.98 sec] Train Loss: 1.1966 / Validation Loss: 1.0811
+Early stopping applied. Minimal epoch: 1
+Training completion duration: 11856.87 sec. Validation Loss: 1.0810284218846917

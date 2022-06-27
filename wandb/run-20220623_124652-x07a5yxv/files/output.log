@@ -1,0 +1,22 @@
+Device configured: cuda:0
+True
+Starting training loop...
+  0%|                                                                                                                                                                                                                                                                                                        | 0/60 [00:11<?, ?it/s]
+Traceback (most recent call last):
+  File "run.py", line 84, in <module>
+    train(ncf, datasets, hyperparameters)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\training.py", line 81, in train
+    outputs = ncf(x_batch[:, 0], x_batch[:, 1])
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\nn\modules\module.py", line 1120, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\model_movie_rep.py", line 94, in forward
+    cnn_output = torch.cat((cnn_output, torch.load(config.cnn_path + str(id) + ".pt").unsqueeze(dim = 0)))
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\serialization.py", line 607, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\serialization.py", line 882, in _load
+    result = unpickler.load()
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\_utils.py", line 137, in _rebuild_tensor_v2
+    tensor = _rebuild_tensor(storage, storage_offset, size, stride)
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\_utils.py", line 132, in _rebuild_tensor
+    t = torch.tensor([], dtype=storage.dtype, device=storage.device)
+KeyboardInterrupt

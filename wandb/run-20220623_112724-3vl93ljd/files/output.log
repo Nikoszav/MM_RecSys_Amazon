@@ -1,0 +1,24 @@
+Device configured: cuda:0
+True
+Starting training loop...
+
+  2%|████▉                                                                                                                                                                                                                                                                                                    | 1/60 [00:09<09:46,  9.95s/it]
+
+  3%|█████████▉                                                                                                                                                                                                                                                                                               | 2/60 [00:18<08:36,  8.90s/it]
+Epoch [002/060][Time:8.17 sec] Train Loss: 0.9650 / Validation Loss: 0.8958
+
+
+  7%|███████████████████▊                                                                                                                                                                                                                                                                                     | 4/60 [00:33<07:42,  8.26s/it]
+
+  8%|████████████████████████▊                                                                                                                                                                                                                                                                                | 5/60 [00:41<07:26,  8.12s/it]
+
+ 10%|█████████████████████████████▋                                                                                                                                                                                                                                                                           | 6/60 [00:49<07:14,  8.05s/it]
+Epoch [006/060][Time:7.92 sec] Train Loss: 0.8031 / Validation Loss: 0.8826
+
+
+ 13%|███████████████████████████████████████▌                                                                                                                                                                                                                                                                 | 8/60 [01:05<06:56,  8.02s/it]
+Epoch [008/060][Time:7.99 sec] Train Loss: 0.7815 / Validation Loss: 0.8896
+Epoch [009/060][Time:8.10 sec] Train Loss: 0.7744 / Validation Loss: 0.8882
+Early stopping applied. Minimal epoch: 5
+
+ 13%|███████████████████████████████████████▌                                                                                                                                                                                                                                                                 | 8/60 [01:13<08:00,  9.23s/it]

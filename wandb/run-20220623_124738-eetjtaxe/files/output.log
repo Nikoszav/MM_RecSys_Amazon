@@ -1,0 +1,19 @@
+
+  0%|                                                                                                                                                                                                                                                                                                                 | 0/60 [00:00<?, ?it/s]
+Device configured: cuda:0
+True
+  0%|                                                                                                                                                                                                                                                                                                                 | 0/60 [09:17<?, ?it/s]
+Traceback (most recent call last):
+  File "run.py", line 84, in <module>
+    train(ncf, datasets, hyperparameters)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\training.py", line 81, in train
+    outputs = ncf(x_batch[:, 0], x_batch[:, 1])
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\nn\modules\module.py", line 1120, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\model_movie_rep.py", line 93, in forward
+    bert_output = torch.cat((bert_output, torch.load(config.bert_filepath + str(id) + ".pt")))
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\serialization.py", line 607, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\serialization.py", line 869, in _load
+    class UnpicklerWrapper(pickle_module.Unpickler):  # type: ignore[name-defined]
+KeyboardInterrupt

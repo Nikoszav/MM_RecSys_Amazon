@@ -1,0 +1,36 @@
+Device configured: cuda:0
+True
+Starting training loop...
+
+  2%|█████▉                                                                                                                                                                                                                                                                                                   | 1/50 [00:34<28:13, 34.57s/it]
+Epoch [001/050][Time:34.56 sec] Train Loss: 1.5144 / Validation Loss: 1.4051
+Epoch [001/050][Time:34.56 sec] Train Acc: 0.4089 / Validation Acc: 0.3429
+Epoch [002/050][Time:36.05 sec] Train Loss: 1.4748 / Validation Loss: 1.3820
+
+
+  6%|█████████████████▊                                                                                                                                                                                                                                                                                       | 3/50 [01:45<27:34, 35.20s/it]
+Epoch [003/050][Time:34.91 sec] Train Loss: 1.4420 / Validation Loss: 1.3296
+Epoch [003/050][Time:34.91 sec] Train Acc: 0.4107 / Validation Acc: 0.3500
+Epoch [004/050][Time:34.51 sec] Train Loss: 1.4028 / Validation Loss: 1.3104
+
+
+ 10%|█████████████████████████████▋                                                                                                                                                                                                                                                                           | 5/50 [02:53<25:47, 34.39s/it]
+Epoch [005/050][Time:33.43 sec] Train Loss: 1.3819 / Validation Loss: 1.3054
+
+ 12%|███████████████████████████████████▋                                                                                                                                                                                                                                                                     | 6/50 [03:25<24:36, 33.55s/it]
+Epoch [006/050][Time:31.93 sec] Train Loss: 1.3670 / Validation Loss: 1.3050
+Epoch [006/050][Time:31.93 sec] Train Acc: 0.4125 / Validation Acc: 0.2786
+Epoch [007/050][Time:32.83 sec] Train Loss: 1.3552 / Validation Loss: 1.3069
+
+
+ 16%|███████████████████████████████████████████████▌                                                                                                                                                                                                                                                         | 8/50 [04:33<23:40, 33.82s/it]
+Epoch [008/050][Time:34.91 sec] Train Loss: 1.3455 / Validation Loss: 1.3101
+
+ 18%|█████████████████████████████████████████████████████▍                                                                                                                                                                                                                                                   | 9/50 [05:06<23:03, 33.75s/it]
+Epoch [009/050][Time:33.59 sec] Train Loss: 1.3363 / Validation Loss: 1.3147
+Epoch [009/050][Time:33.59 sec] Train Acc: 0.4411 / Validation Acc: 0.2857
+Epoch [010/050][Time:31.75 sec] Train Loss: 1.3282 / Validation Loss: 1.3188
+Epoch [010/050][Time:31.75 sec] Train Acc: 0.4661 / Validation Acc: 0.3000
+Early stopping applied. Minimal epoch: 6
+
+ 18%|█████████████████████████████████████████████████████▍                                                                                                                                                                                                                                                   | 9/50 [05:38<25:41, 37.61s/it]

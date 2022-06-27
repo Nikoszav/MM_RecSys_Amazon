@@ -1,0 +1,24 @@
+Device configured: cuda:0
+True
+Starting training loop...
+
+  2%|▊                                                 | 1/60 [14:22<14:07:45, 862.13s/it]
+
+  3%|█▋                                                | 2/60 [28:35<13:48:21, 856.93s/it]
+  3%|█▋                                               | 2/60 [36:41<17:43:58, 1100.66s/it]
+Traceback (most recent call last):
+  File "run.py", line 84, in <module>
+    train(ncf, datasets, hyperparameters)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\training.py", line 81, in train
+    outputs = ncf(x_batch[:, 0], x_batch[:, 1])
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\nn\modules\module.py", line 1120, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\model_movie_rep.py", line 95, in forward
+    cnn_output = torch.cat((cnn_output, torch.load(config.cnn_path + str(id) + ".pt").unsqueeze(dim = 0)))
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\serialization.py", line 594, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\nikol\anaconda3\envs\PTVQA\lib\site-packages\torch\serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+KeyboardInterrupt

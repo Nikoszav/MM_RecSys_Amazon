@@ -1,0 +1,14 @@
+Device configured: cuda:0
+True
+Starting training loop...
+  0%|                                                                                                                                                                                                                                                                                                                 | 0/60 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "run.py", line 84, in <module>
+    train(ncf, datasets, hyperparameters)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\training.py", line 81, in train
+    outputs = ncf(x_batch[:, 0], x_batch[:, 1])
+  File "C:\Users\nikol\anaconda3\envs\ptvqa\lib\site-packages\torch\nn\modules\module.py", line 1120, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\model_movie_rep.py", line 93, in forward
+    bert_output = torch.cat((bert_output, torch.load(config.bert_filepath + str(id) + ".pt")))
+KeyboardInterrupt

@@ -1,0 +1,4 @@
+2022-06-26 12:05:09,319 INFO    MainThread:35236 [wandb_setup.py:_flush():76] Loading settings from C:\Users\nikol\.config\wandb\settings
+2022-06-26 12:05:09,320 INFO    MainThread:35236 [wandb_setup.py:_flush():76] Loading settings from D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\wandb\settings
+2022-06-26 12:05:09,320 INFO    MainThread:35236 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-06-26 12:05:09,320 INFO    MainThread:35236 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': 'run.py'}
