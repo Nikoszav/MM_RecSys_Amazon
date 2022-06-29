@@ -98,6 +98,10 @@ class DatasetBatchIterator:
         k = self._current
         self._current += 1
         bs = self.batch_size
+        
+        print(self.X)
+        #& save it to tensor and work on the jupyter to see the bug
+        
         X_batch = torch.LongTensor(self.X[k * bs : (k + 1) * bs])
         Y_batch = torch.FloatTensor(self.Y[k * bs : (k + 1) * bs])
 

@@ -8,8 +8,10 @@ poster_folder_path = "D:/University/Edinburgh/Dissertation/Data/poster_downloads
 data_file = "D:/University/Edinburgh/Dissertation/Data/data_after_process.pkl"
 # ratings_file = "D:/University/Edinburgh/Dissertation/Data/ratings_artficial_added.pkl"
 # ratings_file = "D:/University/Edinburgh/Dissertation/Data/ratings_artficial_added.pkl"
-ratings_file = "D:/University/Edinburgh/Dissertation/Data/ratings_cls_1_5_2m.pkl"
-
+# ratings_file = "D:/University/Edinburgh/Dissertation/Data/ratings_cls_1_5_2m.pkl"
+ratings_file = "D:/University/Edinburgh/Dissertation/data/ratings_1m.pkl"
+# ratings = pd.read_pickle
+user_metadata_file = "D:/University/Edinburgh/Dissertation/data/users_ratings_metadata_df.pkl"
 padded_language_length_question = 185
 poster_size = 255
 

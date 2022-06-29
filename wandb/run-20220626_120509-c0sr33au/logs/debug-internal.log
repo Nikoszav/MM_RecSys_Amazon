@@ -1,5 +1,0 @@
-2022-06-26 12:05:10,670 INFO    MainThread:11824 [internal.py:wandb_internal():93] W&B internal server running at pid: 11824, started at: 2022-06-26 12:05:10.669237
-2022-06-26 12:05:10,672 INFO    WriterThread:11824 [datastore.py:open_for_write():75] open: D:\University\Edinburgh\Dissertation\MM_RecSys_Amazon\wandb\run-20220626_120509-c0sr33au\run-c0sr33au.wandb
-2022-06-26 12:05:10,675 DEBUG   SenderThread:11824 [sender.py:send():235] send: header
-2022-06-26 12:05:10,675 DEBUG   SenderThread:11824 [sender.py:send():235] send: run
-2022-06-26 12:05:11,313 DEBUG   HandlerThread:11824 [handler.py:handle_request():141] handle_request: check_version

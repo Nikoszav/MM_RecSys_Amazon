@@ -18,7 +18,7 @@ from datasets.datasets import DatasetBatchIterator
 # Tutorial for NCF have a look when time: https://github.com/devforfu/pytorch_playground/blob/master/movielens.ipynb
 # Repo from NVIDIA wth a lot of different recomenders: https://github.com/NVIDIA/DeepLearningExamples
 
-# for comments colors: https://marketplace.visualstudio.com/items?itemName=ParthR2031.colorful-comments
+# for comments colors
 
 
 import wandb
@@ -109,7 +109,7 @@ def train(ncf, datasets, hyperparameters):
                     is_training
                 ):  # you set the calculation of gradients to be on
 
-                    outputs = ncf(x_batch[:, 0], x_batch[:, 1])
+                    outputs = ncf(x_batch[:, 0], x_batch[:, 32], x_batch[:, 1:32])
                     # print(outputs[0])
                     # outputs = outputs.softmax(dim=1)
                     # print(outputs.size())

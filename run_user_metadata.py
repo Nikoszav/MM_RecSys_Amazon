@@ -1,12 +1,14 @@
-from cmath import phase
-from models.model_baseline_cls import NeuralColabFilteringNet
+from models.model_user_metadata_cls import NeuralColabFilteringNet
+from training_user_metadata import train
+
 import config
 
 import numpy as np
 import pandas as pd
 import wandb
 
-ratings = pd.read_pickle(config.ratings_file)
+# ratings = pd.read_pickle(config.ratings_file)
+ratings = pd.read_pickle(config.user_metadata_file)
 # ratings = pd.read_csv("D:/University/Edinburgh/Dissertation/Data/ml-20m/ratings.csv")
 data = pd.read_pickle(config.data_file)
 
@@ -14,7 +16,8 @@ print("The dataset file is this:")
 print(config.ratings_file)
 
 user_count = ratings["userId"].nunique()
-movie_count = ratings["movieId"].nunique() #! you chnage is from data to ratings
+movie_count = ratings["movieId"].nunique()
+user_feature_count = ratings.iloc[:,1:32].shape[1]
 
 
 # Let's peek into the loaded DataFrames
@@ -32,18 +35,19 @@ print(
 )
 
 # We marge the df so we can take the metadata for the movies
-union = pd.merge(ratings, data, on="movieId", how="inner")
-union.sort_values(by=["timestamp"], inplace=True)
-
+# union = pd.merge(ratings, data, on="movieId", how="inner")
+# union.sort_values(by=["timestamp"], inplace=True)
+ratings.sort_values(by=["timestamp"], inplace=True)
 # print (union.head())
 
 
 # Define our input and labels data X,Y
-X = union[["userId", "movieId", "timestamp"]]
+# X = union[["userId", "movieId", "timestamp"]]
+X = ratings
 
 # Because we change the problem and we treat it like classification
 
-Y = union["rating"].astype(np.float32)
+Y = ratings["rating"].astype(np.float32)
 # Get one hot encoding of columns B
 Y_one_hot = pd.get_dummies(Y)
 # print(Y_one_hot.head())
@@ -86,7 +90,7 @@ print(
     "##########################################################################################"
 )
 
-ncf = NeuralColabFilteringNet(user_count, movie_count, n_classes=len(Y.unique()))
+ncf = NeuralColabFilteringNet(user_count, movie_count, user_feature_count,  n_classes=len(Y.unique()))
 print(f"Our model architecture:\n\n{ncf}\n")
 
 # Let's look at the model size
@@ -95,7 +99,7 @@ print(
     f"Number of model parameters: {num_params:,}, model training size: {num_params*4/(1024**2):.2f} MB"
 )
 
-from training import train
+
 
 # TODO: this will be added to the config file
 hyperparameters = dict(
